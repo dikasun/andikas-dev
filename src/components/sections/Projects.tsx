@@ -16,7 +16,7 @@ const ProjectIItem = ({image, platform, name, description}: ProjectProps) => {
             />
 
             <div className="relative p-4 sm:p-6 lg:p-8">
-                <p className={`w-fit text-xs md:text-sm font-medium tracking-wider bg-robin-egg-blue rounded-full text-white py-1 px-3 ${jakartaSans.className}`}>{platform}</p>
+                <p className={`w-fit text-xs md:text-sm font-medium tracking-wider bg-turquoise rounded-full text-white py-1 px-3 ${jakartaSans.className}`}>{platform}</p>
                 <p className={`text-base md:text-xl font-bold uppercase text-white sm:text-2xl pt-1.5 ${jakartaSans.className}`}>{name}</p>
                 <div className="mt-32 sm:mt-48 lg:mt-64">
                     <div
@@ -31,7 +31,7 @@ const ProjectIItem = ({image, platform, name, description}: ProjectProps) => {
 
 const Projects = () => {
     return (
-        <Section color="bg-robin-egg-blue" title="My Projects" content={
+        <Section color="bg-turquoise" title="My Projects" content={
             <div className="w-full pt-11 sm:p-11">
                 <ProjectIItem image={"Screenshot__31_.png"} platform={"Android App"} name={"Comphy"}
                               description={"Comphy Merupakan sebuah wadah komunitas bagi para penggiat dibidang fotografi baik untuk kalangan Profesional, Masyarakat yang sedang memulai belajar fotografi maupun Masyarakat yang mempunyai ketertarikan di bidang fotografi."}/>

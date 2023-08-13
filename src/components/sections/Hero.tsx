@@ -11,7 +11,7 @@ const Hero = () => {
                     className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 items-center justify-items-start lg:justify-items-end">
                     <div className="group relative inline-block lg:order-last">
                     <span
-                        className="absolute inset-0 translate-x-2 translate-y-2 bg-maize transition-transform w-[250px] h-[250px] sm:w-[280px] sm:h-[280px] rounded-tl-25 rounded-tr-25 rounded-br-25"/>
+                        className="absolute inset-0 translate-x-2.5 translate-y-2.5 bg-maize transition-transform w-[250px] h-[250px] sm:w-[280px] sm:h-[280px] rounded-tl-25 rounded-tr-25 rounded-br-25 border-2 border-jet"/>
                         <span className="relative inline-block w-[250px] h-[250px] sm:w-[280px] sm:h-[280px]">
                         <Image
                             src="andikas_8TxTvsfNY"
@@ -19,7 +19,7 @@ const Hero = () => {
                             width={280}
                             height={280}
                             style={imageHeroStyle}
-                            className="border-2 border-rich-black"
+                            className="border-2 border-jet"
                         />
                     </span>
                     </div>

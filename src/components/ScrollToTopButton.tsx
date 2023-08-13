@@ -30,12 +30,12 @@ const ScrollToTopButton = () => {
 
     return (
         <motion.button
-            className="fixed bottom-0 end-0 w-14 h-14 m-12 md:m-24 bg-bittersweet rounded-xl"
+            className="fixed bottom-0 end-0 w-14 h-14 m-12 md:m-24 bg-bittersweet border-2 border-jet rounded-xl"
             variants={ScrollToTopContainerVariants}
             initial="hide"
             animate={controls}
             onClick={scrollToTop}>
-            <FontAwesomeIcon icon={faArrowUp} className="text-background-color"/>
+            <FontAwesomeIcon icon={faArrowUp} className="text-jet"/>
         </motion.button>
     );
 }

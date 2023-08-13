@@ -9,16 +9,20 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
+                'light-red': '#FF8785',
                 'bittersweet': '#FF5E5B',
                 'tomato': '#FF4A47',
                 'maize': '#FFEC5C',
                 'aureolin': '#FFE733',
                 'emerald': '#30D97C',
                 'jade': '#32AE6A',
+                'sky-blue': '#33D3FF',
+                'turquoise': '#00E0DD',
                 'robin-egg-blue': '#00CECB',
                 'moonstone': '#0BA9C1',
                 'violet-blue': '#2A4DB7',
                 'medium-slate-blue': '#7F52FF',
+                'cadet-gray': '#A5A9B6',
                 'space-cadet': '#2A324B',
                 'jet': '#2E3038',
                 'raisin-black': '#26282E',

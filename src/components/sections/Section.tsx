@@ -16,7 +16,7 @@ const Section = ({color, title, content}: SectionProps) => {
             <div className="flex flex-col justify-center items-start max-h-fit mt-28">
                 <div className="group relative inline-block">
                 <span
-                    className={`absolute inset-0 translate-x-1.5 translate-y-1.5 rounded-full transition-transform ${color}`}/>
+                    className={`absolute inset-0 translate-x-1.5 translate-y-1.5 rounded-full transition-transform ${color} border-2 border-jet`}/>
                     <span
                         className={`relative inline-block border-2 border-jet rounded-full bg-background-color px-16 py-3 text-xs md:text-sm font-bold uppercase tracking-widest ${jakartaSans.className}`}>{title}</span>
                 </div>
