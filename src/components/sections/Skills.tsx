@@ -1,12 +1,7 @@
-'use client'
-
 import {manrope} from "@/constants";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faChevronDown, faChevronUp} from "@fortawesome/free-solid-svg-icons";
 import {Section, SubHead} from "@/components/sections/Section";
 import {SkillProps} from "@/types";
 import Image from "next/image";
-import {useState} from "react";
 
 const SkillCard = ({icon, name}: SkillProps) => {
     return (
@@ -27,22 +22,15 @@ const SkillCard = ({icon, name}: SkillProps) => {
 }
 
 const Skills = () => {
-    const [techSkillExpanded, setTechSkillExpanded] = useState(true);
-    const [langSkillExpanded, setLangSkillExpanded] = useState(true);
-
     return (
         <Section color="bg-medium-slate-blue" title="My Skills" content={
             <div className="sm:w-full mt-6">
                 <div className="flex flex-row items-center mt-6">
                     <SubHead dividerColor="bg-medium-slate-blue" title="Mobile & Web App Development"/>
-                    <FontAwesomeIcon icon={techSkillExpanded ? faChevronUp : faChevronDown} className="ms-4"
-                                     onClick={() => {
-                                         setTechSkillExpanded(!techSkillExpanded)
-                                     }}/>
                 </div>
                 <div className="bg-lavender rounded-tr-3xl rounded-bl-3xl rounded-br-3xl mt-6">
                     <div
-                        className={`flex flex-wrap gap-1.5 justify-items-center py-3 ${techSkillExpanded ? "block" : "hidden"}`}>
+                        className={`flex flex-wrap gap-1.5 justify-items-center py-3`}>
                         <SkillCard icon="skills/android.svg" name="Android"/>
                         <SkillCard icon="skills/compose.svg" name="Compose"/>
                         <SkillCard icon="skills/flutter.svg" name="Flutter"/>
@@ -55,14 +43,10 @@ const Skills = () => {
                 </div>
                 <div className="flex flex-row items-center mt-12">
                     <SubHead dividerColor="bg-medium-slate-blue" title="Programming Languages"/>
-                    <FontAwesomeIcon icon={langSkillExpanded ? faChevronUp : faChevronDown} className="ms-4"
-                                     onClick={() => {
-                                         setLangSkillExpanded(!langSkillExpanded)
-                                     }}/>
                 </div>
                 <div className="bg-lavender rounded-tr-3xl rounded-bl-3xl rounded-br-3xl mt-6">
                     <div
-                        className={`flex flex-wrap gap-1.5 justify-items-center py-3 ${langSkillExpanded ? "block" : "hidden"}`}>
+                        className={`flex flex-wrap gap-1.5 justify-items-center py-3`}>
                         <SkillCard icon="skills/java.svg" name="Java"/>
                         <SkillCard icon="skills/kotlin.svg" name="Kotlin"/>
                         <SkillCard icon="skills/dart.svg" name="Dart"/>

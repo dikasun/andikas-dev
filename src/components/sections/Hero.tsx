@@ -19,6 +19,7 @@ const Hero = () => {
                             width={280}
                             height={280}
                             style={imageHeroStyle}
+                            className="border-2 border-rich-black"
                         />
                     </span>
                     </div>
