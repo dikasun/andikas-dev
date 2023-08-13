@@ -10,15 +10,20 @@ config.autoAddCss = false;
 
 export const metadata: Metadata = {
     title: 'Andikas',
-    description: 'Andikas personal website',
+    description: 'andikas portfolio website',
+    openGraph: {
+        images: '/favicon.png',
+        title: 'Andikas',
+        description: 'andikas portfolio website',
+    },
+    icons: {
+        icon: '/favicon.ico'
+    }
 }
 
 export default function RootLayout({children,}: { children: React.ReactNode }) {
     return (
         <html lang="en">
-        <head>
-            <link rel="icon" href="/favicon.ico"/>
-        </head>
         <body className={`bg-background-color ${nunito.className}`}>{children}</body>
         </html>
     )
