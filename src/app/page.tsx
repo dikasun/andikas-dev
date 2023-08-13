@@ -3,7 +3,6 @@ import Skills from "@/components/sections/Skills";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import Journeys from "@/components/sections/Journeys";
 import Projects from "@/components/sections/Projects";
-import Footer from "@/components/sections/Footer";
 import Contact from "@/components/sections/Contact";
 
 export default function Home() {
@@ -15,7 +14,6 @@ export default function Home() {
             <Journeys/>
             <Projects/>
             <Contact/>
-            <Footer/>
             <ScrollToTopButton/>
         </main>
     )

@@ -5,6 +5,7 @@ import {nunito} from "@/constants";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import {config} from "@fortawesome/fontawesome-svg-core";
+import Footer from "@/components/sections/Footer";
 
 config.autoAddCss = false;
 
@@ -24,7 +25,10 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: { children: React.ReactNode }) {
     return (
         <html lang="en">
-        <body className={`bg-background-color ${nunito.className}`}>{children}</body>
+        <body className={`bg-background-color ${nunito.className}`}>
+        {children}
+        <Footer/>
+        </body>
         </html>
     )
 }
