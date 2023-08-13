@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Andikas',
     description: 'andikas portfolio website',
     openGraph: {
-        images: '/favicon.png',
+        images: 'https://ik.imagekit.io/4o6binhtw/andikas/andikas.png?updatedAt=1691911352804',
         title: 'Andikas',
         description: 'andikas portfolio website',
     },
