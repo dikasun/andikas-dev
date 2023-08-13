@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Andikas',
     description: 'andikas portfolio website',
     openGraph: {
-        images: 'https://ik.imagekit.io/4o6binhtw/andikas/andikas.png?updatedAt=1691911352804',
+        images: 'https://ik.imagekit.io/4o6binhtw/andikas/andikas.png',
         title: 'Andikas',
         description: 'andikas portfolio website',
     },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     }
 }
 
-export default function RootLayout({children,}: { children: React.ReactNode }) {
+export default function RootLayout({children}: { children: React.ReactNode }) {
     return (
         <html lang="en">
         <body className={`bg-background-color ${nunito.className}`}>{children}</body>

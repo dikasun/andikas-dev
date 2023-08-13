@@ -32,7 +32,7 @@ const ProjectIItem = ({image, platform, name, description}: ProjectProps) => {
 const Projects = () => {
     return (
         <Section color="bg-robin-egg-blue" title="My Projects" content={
-            <div className="w-full pt-12 sm:p-12">
+            <div className="w-full pt-11 sm:p-11">
                 <ProjectIItem image={"Screenshot__31_.png"} platform={"Android App"} name={"Comphy"}
                               description={"Comphy Merupakan sebuah wadah komunitas bagi para penggiat dibidang fotografi baik untuk kalangan Profesional, Masyarakat yang sedang memulai belajar fotografi maupun Masyarakat yang mempunyai ketertarikan di bidang fotografi."}/>
                 <ProjectIItem image={"Screenshot__31_.png"} platform={"Android App"} name={"Comphy"}
