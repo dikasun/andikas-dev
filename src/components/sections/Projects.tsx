@@ -2,9 +2,7 @@ import {Section} from "@/components/sections/Section";
 import Image from "next/image";
 import {jakartaSans} from "@/constants";
 import {ProjectProps} from "@/types";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
-import {FullRoundButton} from "@/components/Buttons";
+import {SeeMoreProjectsButton} from "@/components/Buttons";
 
 const ProjectIItem = ({image, platform, name, description}: ProjectProps) => {
     return (
@@ -40,18 +38,7 @@ const Projects = () => {
                 <ProjectIItem image={"Screenshot__31_.png"} platform={"Android App"} name={"Comphy"}
                               description={"Comphy Merupakan sebuah wadah komunitas bagi para penggiat dibidang fotografi baik untuk kalangan Profesional, Masyarakat yang sedang memulai belajar fotografi maupun Masyarakat yang mempunyai ketertarikan di bidang fotografi."}/>
                 <div className="flex justify-end">
-                    <FullRoundButton
-                        href="/"
-                        text="See more"
-                        icon={(iconClass) => {
-                            return <FontAwesomeIcon icon={faArrowRight} className={iconClass}/>;
-                        }}
-                        idleBorderColor="border-robin-egg-blue"
-                        idleBgColor="bg-robin-egg-blue"
-                        focusBgColor="bg-background-color"
-                        idleTextColor="text-background-color"
-                        focusTextColor="text-robin-egg-blue"
-                    />
+                    <SeeMoreProjectsButton href={"/"}/>
                 </div>
             </div>
         }/>

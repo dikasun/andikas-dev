@@ -18,7 +18,6 @@ export default function RootLayout({children,}: { children: React.ReactNode }) {
         <html lang="en">
         <head>
             <link rel="icon" href="/favicon.ico"/>
-            <title>Andikas</title>
         </head>
         <body className={`bg-background-color ${nunito.className}`}>{children}</body>
         </html>

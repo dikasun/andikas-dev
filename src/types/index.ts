@@ -16,11 +16,13 @@ export interface TextFieldProps {
 export interface ButtonProps {
     href: string,
     text: string,
-    idleBorderColor: string,
-    idleBgColor: string,
-    focusBgColor: string,
-    idleTextColor: string,
-    focusTextColor: string,
+    idleColor?: string,
+    focusColor?: string,
+    idleBorderColor?: string,
+    idleBgColor?: string,
+    focusBgColor?: string,
+    idleTextColor?: string,
+    focusTextColor?: string,
     icon: ((iconClass: string) => JSX.Element) | null
 }
 

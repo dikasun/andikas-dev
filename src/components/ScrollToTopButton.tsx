@@ -18,11 +18,11 @@ const ScrollToTopContainerVariants: Variants = {
 };
 
 const ScrollToTopButton = () => {
-    const {scrollYProgress} = useScroll();
+    const {scrollY} = useScroll();
     const controls = useAnimationControls();
 
     useEffect(() => {
-        return scrollYProgress.on('change', (latestValue) => {
+        return scrollY.on('change', (latestValue) => {
             controls.start(latestValue > 0.025 ? 'show' : 'hide').then(_ => {
             });
         });

@@ -1,8 +1,6 @@
 import {Section, SubHead} from "@/components/sections/Section";
 import {TextAreaField, TextField} from "@/components/Fields";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faPaperPlane} from "@fortawesome/free-solid-svg-icons";
-import {FullRoundButton} from "@/components/Buttons";
+import {SendMessageButton} from "@/components/Buttons";
 
 const Contact = () => {
     return (
@@ -16,18 +14,7 @@ const Contact = () => {
                     <TextAreaField id="UserMessage" title="Message" placeholder="Enter any additional messages..."
                                    type={'text'}/>
                     <div className="flex justify-end">
-                        <FullRoundButton
-                            href=""
-                            text="Send"
-                            icon={(iconClass) => {
-                                return <FontAwesomeIcon icon={faPaperPlane} className={iconClass}/>;
-                            }}
-                            idleBorderColor="border-jet"
-                            idleBgColor="bg-jet"
-                            focusBgColor="bg-lavender"
-                            idleTextColor="text-lavender"
-                            focusTextColor="text-jet"
-                        />
+                        <SendMessageButton href={"/"}/>
                     </div>
                 </div>
             </div>
