@@ -18,10 +18,26 @@ interface SocialButtonProps {
 }
 
 const SocialButton = ({ href, icon, text }: SocialButtonProps) => {
+  return (
+    <a
+      className={`w-fit group flex items-center gap-3 border-2 border-raisin-black rounded-full bg-raisin-black text-background-color hover:bg-transparent hover:text-raisin-black px-4 py-2`}
+      href={href}
+    >
+      <FontAwesomeIcon icon={icon} className="text-sm md:text-base" />
+      <span
+        className={`text-xs leading-[12px] md:text-sm md:leading-[14px] font-medium`}
+      >
+        {text}
+      </span>
+    </a>
+  );
+};
+
+const AnimatedSocialButton = ({ href, icon, text }: SocialButtonProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
   return (
     <motion.a
-      className={`w-fit group flex items-center gap-4 rounded-full bg-raisin-black text-background-color px-4 py-2`}
+      className={`w-fit group flex items-center gap-3 rounded-full bg-raisin-black text-background-color px-4 py-2`}
       href={href}
       layout={true}
       onMouseEnter={() => setIsExpanded(!isExpanded)}
@@ -50,22 +66,22 @@ const SocialButton = ({ href, icon, text }: SocialButtonProps) => {
 const SocialGroup = () => {
   return (
     <div className="flex flex-wrap justify-center gap-3 mt-3">
-      <SocialButton
+      <AnimatedSocialButton
         href="mailto:andikas.dev@gmail.com"
         text="Email"
         icon={faEnvelope}
       />
-      <SocialButton
+      <AnimatedSocialButton
         href="https://t.me/rafusr"
         text="Telegram"
         icon={faTelegram}
       />
-      <SocialButton
+      <AnimatedSocialButton
         href="https://linkedin.com/in/andika-sultanrafli"
         text="Linkedin"
         icon={faLinkedin}
       />
-      <SocialButton
+      <AnimatedSocialButton
         href="https://github.com/dikasun"
         text="Github"
         icon={faGithub}
@@ -74,4 +90,4 @@ const SocialGroup = () => {
   );
 };
 
-export { SocialButton, SocialGroup };
+export { SocialButton, AnimatedSocialButton, SocialGroup };
