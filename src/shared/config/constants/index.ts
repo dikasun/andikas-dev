@@ -13,7 +13,7 @@ const imageHeroStyle = {
   borderBottomRightRadius: "25%",
 };
 
-const baseUrl = "https://backtor-demo.fly.dev";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
 const revalidateTime = 604800;
 
 const jakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
