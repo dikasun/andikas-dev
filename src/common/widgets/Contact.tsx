@@ -7,6 +7,7 @@ import React from "react";
 import { TextAreaField, TextField } from "@/common/components/Fields";
 import { sendMessage } from "@/shared/utils";
 import { toast } from "react-toastify";
+import { toast as hotToast } from "react-hot-toast";
 
 type FormValues = {
   name: string;
@@ -47,7 +48,10 @@ const Contact = () => {
           <SubHead dividerColor="bg-bittersweet" title="Get in touch" />
           <form
             className="w-full flex flex-col gap-4 sm:w-fit bg-lavender rounded-tr-3xl rounded-bl-3xl rounded-br-3xl p-8 mt-4"
-            onSubmit={handleSubmit(onSubmit)}
+            onSubmit={(e) => {
+              e.preventDefault();
+              hotToast.error("This feature is currently under development.");
+            }}
           >
             <TextField
               {...register("name", {

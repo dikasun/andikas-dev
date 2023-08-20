@@ -3,9 +3,10 @@ import React from "react";
 import "./globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import { nunito } from "../shared/config/constants";
+import { nunito } from "@/shared/config/constants";
 import Footer from "@/common/widgets/Footer";
 import ScrollToTopButton from "@/common/widgets/ScrollToTopButton";
+import { Toaster } from "react-hot-toast";
 
 config.autoAddCss = false;
 
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body
         className={`bg-background-color flex flex-col min-h-fit max-w-full lg:max-w-80% xl:max-w-65% 2xl:max-w-55% mt-28 mx-auto px-12 pt-8 sm:pt-12 sm:px-6 lg:pt-16 lg:px-20 text-rich-black ${nunito.className}`}
       >
+        <Toaster />
         {children}
         <ScrollToTopButton />
         <Footer />

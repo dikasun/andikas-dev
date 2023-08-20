@@ -1,10 +1,9 @@
+import DevFeature from "@/common/widgets/DevFeature";
+
 export default function Page() {
   return (
     <div>
-      <p>dawndklwandkaw</p>
-      <p>dawndklwandkaw</p>
-      <p>dawndklwandkaw</p>
-      <p>dawndklwandkaw</p>
+      <DevFeature />
     </div>
   );
 }
